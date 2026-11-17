@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website cá nhân</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 25px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: #0ea5e9;
+            color: white;
+            padding: 14px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0284c7;
+            transform: scale(1.05);
+        }
+
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(255,255,255,0.08);
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #94a3b8;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>My Website</h2>
+    <nav>
+        <a href="#home">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Xin chào, mình là <span>Developer</span></h1>
+    <p>Chào mừng bạn đến với website cá nhân của mình!</p>
+    <a href="#about" class="btn">Khám phá ngay</a>
+</section>
+
+<section class="about" id="about">
+    <h2>Giới thiệu</h2>
+    <p style="margin-top:20px">
+        Đây là website được xây dựng bằng HTML, CSS và JavaScript.
+    </p>
+</section>
+
+<footer>
+    © 2026 My Website | Designed by Developer
+</footer>
+
+</body>
+</html>
